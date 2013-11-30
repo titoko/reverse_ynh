@@ -1,0 +1,40 @@
+{
+  "name": "Reverse",
+  "id": "reverse",
+  "description": {
+    "en": "Template for redirection",
+    "fr": "Template pour des redirection"
+  },
+  "developer": {
+    "name": "titoko",
+    "email": "titoko@titoko.fr",
+    "url": "http://dev.yunohost.org"
+  },
+  "multi_instance": "true",
+  "arguments": {
+    "install" : [
+    {
+      "name": "domain",
+      "ask": {
+        "en": "Choose a domain for the reverse"
+      },
+      "example": "domain.org"
+    },
+    {
+      "name": "ip",
+      "ask": {
+        "en": "Choose target ip or domain"
+      },
+      "example": "192.168.1.5:8888/app"
+    },
+    {
+      "name": "path",
+      "ask": {
+        "en": "Choose the path of redirection"
+      },
+      "example": "/reverseapp",
+      "default": "/reverseapp"
+    }
+    ]
+  }
+}
